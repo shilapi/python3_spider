@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e27a8fd8-b13b-4c75-b512-a6fe3a5ba69b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/get_picture.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_rank&amp;title.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_rank&amp;title_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_picture.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +30,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
-  <component name="RunManager" selected="Python.get_rank&amp;title_url">
+  <component name="RunManager" selected="Python.get_picture">
     <configuration name="get_picture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python爬虫" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.get_rank&amp;title_url" />
         <item itemvalue="Python.get_picture" />
+        <item itemvalue="Python.get_rank&amp;title_url" />
       </list>
     </recent_temporary>
   </component>
@@ -105,25 +104,25 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="523" y="360" key="Github.CreateGistDialog/0.23.1440.828@0.23.1440.828" timestamp="1587568904033" />
-    <state width="1419" height="214" key="GridCell.Tab.0.bottom" timestamp="1587603960328">
+    <state width="1419" height="214" key="GridCell.Tab.0.bottom" timestamp="1587632344998">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587603960328" />
-    <state width="1419" height="214" key="GridCell.Tab.0.center" timestamp="1587603960326">
+    <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587632344998" />
+    <state width="1419" height="214" key="GridCell.Tab.0.center" timestamp="1587632344996">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587603960326" />
-    <state width="1419" height="214" key="GridCell.Tab.0.left" timestamp="1587603960326">
+    <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587632344996" />
+    <state width="1419" height="214" key="GridCell.Tab.0.left" timestamp="1587632344994">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587603960325" />
-    <state width="1419" height="214" key="GridCell.Tab.0.right" timestamp="1587603960327">
+    <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587632344994" />
+    <state width="1419" height="214" key="GridCell.Tab.0.right" timestamp="1587632344997">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587603960327" />
-    <state x="250" y="129" key="SettingsEditor" timestamp="1587600127632">
+    <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587632344997" />
+    <state x="250" y="129" key="SettingsEditor" timestamp="1587627167079">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="250" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1587600127632" />
+    <state x="250" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1587627167079" />
   </component>
 </project>
