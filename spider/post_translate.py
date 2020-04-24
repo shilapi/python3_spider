@@ -33,6 +33,6 @@ headers = {
 }
 
 response = requests.post(url,headers=headers,data=form_data)
-print (response.json())
+print (response)
 content = json.loads(response.text)
 print(content)
