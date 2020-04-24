@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e27a8fd8-b13b-4c75-b512-a6fe3a5ba69b" name="Default Changelist" comment="图片爬虫基础完成">
+      <change afterPath="$PROJECT_DIR$/post_translate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_picture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/381e1cdb3b623d8356c7850c11e8b1a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/3a2ac2129d39dde91374eb9b177f4823.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/3eb98ae9aa092feb5ead5a8d5981f4e2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/5f8ec0840ffbc96cd1a76109f08b2935.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/6f17680396886e76a4c13f419c26feac.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/77bf22a2f12823419024b0e7aee245bf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/9f0b11070d7f1e12fb371066dc80b9d1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/b548e193ae88862035c91c08dcff4f2f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/bf5083f687548a349dd52a31c749260b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/e8453a8b5b2c55761346163c4c38150a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/picdownload/f478b303fef2da89098feb9eea4c7f33.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +42,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.get_picture">
+  <component name="RunManager" selected="Python.post_translate">
     <configuration name="get_picture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python爬虫" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,8 +88,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="post_translate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python爬虫" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/post_translate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.post_translate" />
         <item itemvalue="Python.get_picture" />
         <item itemvalue="Python.get_rank&amp;title_url" />
       </list>
@@ -108,10 +143,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="图片爬虫基础完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587687045433">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587711937247">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1587687045433" />
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1587711937247" />
     <state x="336" y="40" key="CommitChangelistDialog2" timestamp="1587691220927">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -124,38 +159,38 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="523" y="360" key="Github.CreateGistDialog/0.23.1440.828@0.23.1440.828" timestamp="1587568904033" />
-    <state width="1419" height="238" key="GridCell.Tab.0.bottom" timestamp="1587691208523">
+    <state width="1419" height="238" key="GridCell.Tab.0.bottom" timestamp="1587711915222">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="238" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587691208523" />
-    <state width="1419" height="238" key="GridCell.Tab.0.center" timestamp="1587691208522">
+    <state width="1419" height="238" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587711915222" />
+    <state width="1419" height="238" key="GridCell.Tab.0.center" timestamp="1587711915219">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="238" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587691208522" />
-    <state width="1419" height="238" key="GridCell.Tab.0.left" timestamp="1587691208521">
+    <state width="1419" height="238" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587711915219" />
+    <state width="1419" height="238" key="GridCell.Tab.0.left" timestamp="1587711915219">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="238" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587691208521" />
-    <state width="1419" height="238" key="GridCell.Tab.0.right" timestamp="1587691208522">
+    <state width="1419" height="238" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587711915219" />
+    <state width="1419" height="238" key="GridCell.Tab.0.right" timestamp="1587711915221">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="238" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587691208522" />
-    <state width="1419" height="266" key="GridCell.Tab.1.bottom" timestamp="1587643507305">
+    <state width="1419" height="238" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587711915221" />
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom" timestamp="1587710258011">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="266" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587643507305" />
-    <state width="1419" height="266" key="GridCell.Tab.1.center" timestamp="1587643507303">
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587710258011" />
+    <state width="1419" height="266" key="GridCell.Tab.1.center" timestamp="1587710258009">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="266" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1587643507303" />
-    <state width="1419" height="266" key="GridCell.Tab.1.left" timestamp="1587643507302">
+    <state width="1419" height="266" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1587710258009" />
+    <state width="1419" height="266" key="GridCell.Tab.1.left" timestamp="1587710258009">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="266" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1587643507302" />
-    <state width="1419" height="266" key="GridCell.Tab.1.right" timestamp="1587643507304">
+    <state width="1419" height="266" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1587710258009" />
+    <state width="1419" height="266" key="GridCell.Tab.1.right" timestamp="1587710258010">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="266" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1587643507304" />
+    <state width="1419" height="266" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1587710258010" />
     <state x="443" y="128" key="SettingsEditor" timestamp="1587690780382">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
