@@ -14,7 +14,7 @@ bv=hashlib.md5((browserv).encode('utf-8')).hexdigest()
 sign=hashlib.md5(("fanyideskweb" + input + str(salt) + "Nw(nmmbP%A-r6U3EUn]Aj").encode('utf-8')).hexdigest()
 url='http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule'
 form_data={
-    'i':'你好',
+    'i':input,
     'from':'zh-CHS',
     'to':'en',
     'smartresult':'dict',
@@ -30,9 +30,13 @@ form_data={
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36',
     'Referer': 'http://fanyi.youdao.com/',
+    'cookies':'___rl__test__cookies:1587711594418; OUTFOX_SEARCH_USER_ID_NCOO:1537631300.1306639; OUTFOX_SEARCH_USER_ID:-987467867@10.169.0.82; JSESSIONID:aaaYoxK7YwO7Xc-GkSQgx',
 }
 
-response = requests.post(url,headers=headers,data=form_data)
-print (response)
-content = json.loads(response.text)
-print(content)
+response = requests.post(url,data=form_data)
+#print (response)
+req=requests.urlopen
+html = response.read().decode('utf-8')
+content = json.loads(html)
+print(content['translateResult'][0][0]['tgt'])
+

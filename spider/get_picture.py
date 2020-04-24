@@ -1,53 +1,48 @@
 import time, math, random,hashlib# 都是自带的模块
 import requests
+import urllib
+import os
+from bs4 import BeautifulSoup
 
+def findtarget (s,head,end,headurl,endurl) :#筛选出需要的内容并加上序号，存为列表
+    if isinstance(s,list) :
+        for t in range(len(s)):
+            l = str(s[t])
+            dir = '/Users/shilapi/Documents/GitHub/python3_spider/spider/picdownload/'
+            if not os.path.exists(dir):
+                os.makedirs(dir)
+            name=''
+            urlpic=''
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+                }
+            headnum = l.find(head) + len(head)+11
+            endnum = l.find(end)
+            headurlnum = l.find(headurl) + len(headurl)
+            endurlnum = l.find(endurl)
+            name=str(l[headnum:endnum])
+            urlpic=str(l[headurlnum:endurlnum])
+            file = 'picdownload/'+name  #下载文件
+            #print(os.getcwd())
+            #print(name)
+            urllib.request.urlretrieve(url = urlpic,filename = file)
 
+#爬取的链接地址
+url = "https://www.jdlingyu.mobi/collection/meizitu"
 
-def get_html(name):
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+}
 
-    url = 'http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule'
+indexurl = requests.get(url,headers=headers)
+strtext = indexurl.text
+#print(strtext)
+soup = BeautifulSoup(strtext,'lxml')
 
-
-    ts = math.floor(time.time() * 1000)
-    salt = ts + int(random.random() * 10)
-
-    sign = hashlib.md5(("fanyideskweb" + name + str(salt) +"Nw(nmmbP%A-r6U3EUn]Aj").encode('utf-8')).hexdigest()
-    bv = hashlib.md5(("5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36").encode('utf-8')).hexdigest()
-
-    data = {
-        'i': name,
-        'from': 'AUTO',
-        'to': 'AUTO',
-        'smartresult': 'dict',
-        'client': 'fanyideskweb',
-        'salt': salt,
-        'sign': sign,
-        'ts': ts,
-        'bv': bv,
-        'doctype': 'json',
-        'version': '2.1',
-        'keyfrom': 'fanyi.web',
-        'action': 'FY_BY_CLICKBUTTION',
-    }
-
-
-
-    headers = {
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36',
-        'Referer': 'http://fanyi.youdao.com/',
-        #请在此处填写你的 Cookie
-    }
-
-
-    html = requests.post(url, headers=headers, data=data)#有需要的可以改成session写法
-    # print(html.json())
-    #print('正在执行有道翻译程序:')
-    #print('翻译的词:{}'.format(html.json()['translateResult'][0][0]['src']))
-    #print('翻译结果:{}'.format(html.json()['translateResult'][0][0]['tgt']))
-    print(html)
-
-
-name = '靓仔'
-    
-get_html(name)
-#注意：因为Cookie记录了个人信息，所以UP主删了，请自行添加Cookie
+data = soup.select('#main > div.grid-bor > div > div > div.thumb.pos-r > div')#获取指定字符串，保存为list
+print(data)
+urlhead = "background-image:url('"
+urlend = "')"
+head = "background-image:url('http://img.jdlingyu.net/images/"
+end = "')"
+result = findtarget(data,head,end,urlhead,urlend)
+#print('\n'.join(result))
