@@ -1,4 +1,3 @@
-#https://movie.douban.com/explore#!type=movie&tag=%E7%83%AD%E9%97%A8&sort=recommend&page_limit=20&page_start=0
 import requests
 import urllib
 import os
@@ -8,7 +7,7 @@ def findtarget (s,head,end,headurl,endurl) :#筛选出需要的内容并加上�
     if isinstance(s,list) :
         for t in range(len(s)):
             l = str(s[t])
-            dir = './picdownload'#下载文件夹
+            dir = '/Users/shilapi/Documents/GitHub/python3_spider/spider/picdownload/'
             if not os.path.exists(dir):
                 os.makedirs(dir)
             name=''
@@ -16,13 +15,17 @@ def findtarget (s,head,end,headurl,endurl) :#筛选出需要的内容并加上�
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
                 }
-            headnum = l.find(head) + len(head)
+            headnum = l.find(head) + len(head)+11
             endnum = l.find(end)
             headurlnum = l.find(headurl) + len(headurl)
             endurlnum = l.find(endurl)
             name=str(l[headnum:endnum])
             urlpic=str(l[headurlnum:endurlnum])
-            urllib.request.urlretrieve(urlpic,dir)
+            file = 'picdownload/'+name  #下载文件
+            print(os.getcwd())
+            print(name)
+            #os.mknod(file)
+            urllib.request.urlretrieve(url = urlpic,filename = file)
             #response = requests.get(urlpic)
             #image = Image.open(BytesIO(response.content))
             #image.save(dir)
@@ -44,17 +47,15 @@ soup = BeautifulSoup(strtext,'lxml')
 
 data = soup.select('#main > div.grid-bor > div > div > div.thumb.pos-r > div')#获取指定字符串，保存为list
 print(data)
-urlhead = '''
-style="background-image:url('
-'''
-urlend = '''
-')>
-'''
-head = '''
-style="background-image:url('
-'''
-end = '''
-')>
-'''
-result = findtarget(data,'head','end','urlhead','urlend')
+urlhead = "background-image:url('"
+urlend = "')"
+head = "background-image:url('http://img.jdlingyu.net/images/"
+end = "')"
+result = findtarget(data,head,end,urlhead,urlend)
 #print('\n'.join(result))
+'''
+import os
+os.chdir('/Users/shilapi/Documents/GitHub/python3_spider/spider/picdownload/')
+file='000'
+os.mknod(file)
+'''
