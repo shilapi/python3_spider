@@ -22,17 +22,9 @@ def findtarget (s,head,end,headurl,endurl) :#筛选出需要的内容并加上�
             name=str(l[headnum:endnum])
             urlpic=str(l[headurlnum:endurlnum])
             file = 'picdownload/'+name  #下载文件
-            print(os.getcwd())
-            print(name)
-            #os.mknod(file)
+            #print(os.getcwd())
+            #print(name)
             urllib.request.urlretrieve(url = urlpic,filename = file)
-            #response = requests.get(urlpic)
-            #image = Image.open(BytesIO(response.content))
-            #image.save(dir)
-            #img=requests.get(urlpic,headers=headers)
-            #imgname = name + '.png'
-            #filename = os.path.join(dir, imgname)
-            #open(bytes(filename, encoding = "utf8"), 'wb').write(bytes(urlpic, encoding = "utf8"))
 
 #爬取的链接地址
 url = "https://www.jdlingyu.mobi/collection/meizitu"
