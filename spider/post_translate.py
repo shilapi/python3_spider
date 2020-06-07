@@ -35,7 +35,6 @@ headers = {
 
 response = requests.post(url,data=form_data)
 #print (response)
-req=requests.urlopen
 html = response.read().decode('utf-8')
 content = json.loads(html)
 print(content['translateResult'][0][0]['tgt'])
